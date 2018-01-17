@@ -1,5 +1,19 @@
 import app from './index'
 
+describe('getIndex', () => {
+  it('should understand refs', () => {
+    const list = [1, 9, 8]
+    const index = app.getIndex(list, 9)
+    expect(index).toBe(1)
+  })
+
+  it('should understand id', () => {
+    const list = [1, { id: 9 }, 8]
+    const index = app.getIndex(list, { id: 9 })
+    expect(index).toBe(1)
+  })
+})
+
 describe('remove', () => {
   it('should remove the item', () => {
     const list = [
