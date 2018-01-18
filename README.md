@@ -1,7 +1,7 @@
 # list-tweaker
 
 
-CRUD items in an array by id.
+Easily modify items in an array by id.
 
 
 ## remove
@@ -14,21 +14,14 @@ const list = [
   { id: 'c' },
 ]
 
-// remove by item id
-remove(list, 'b')
+remove(list, { id: 'b' })
+
+// [
+//   { id: 'a' },
+//   { id: 'c' },
+// ]
 ```
 
-```js
-const item = { id: 'b' }
-const list = [
-  { id: 'a' },
-  item,
-  { id: 'c' },
-]
-
-// remove by passing the item
-remove(list, item)
-```
 
 ## replace
 
@@ -40,44 +33,43 @@ const list = [
   { id: 'b' },
   { id: 'c' },
 ]
-const newItem = {
+
+replace(list, {
   id: 'b',
   suprise: 'clown!',
-}
+})
 
-replace(list, newItem)
-
-// or by id
-replace(list, 'b', newItem)
+// [
+//   { id: 'a' },
+//   { id: 'b', suprise: 'clown!' },
+//   { id: 'c' },
+// ]
 ```
 
 
 ## update
 
 ```js
-const list = [
-  { id: 'a' },
-  {
-    id: 'b',
-    oldField: 'Kevin Bacon',
-    color: 'green',
-  },
-  { id: 'c' },
-]
-const newItem = {
-  id: 'b',
+import { update } from 'list-tweaker'
+
+const list = [{
+  id: 'a',
+  oldField: 'Kevin Bacon',
+  color: 'green',
+}]
+
+update(list, {
+  id: 'a',
   newField: 'Kevin Costner',
   color: 'chartreuse',
-}
+})
 
-app.update(list, newItem)
-// list[1] changes to
-// {
-//   id: 'b',
+// [{
+//   id: 'a',
 //   oldField: 'Kevin Bacon',
 //   color: 'chartreuse',
 //   newField: 'Kevin Costner',
-// }
+// }]
 ```
 
 
