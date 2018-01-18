@@ -22,5 +22,21 @@
     "jest": "^22.0.3"
   },
   "dependencies": {},
-  "license": "ISC"
+  "license": "ISC",
+  "directories": {
+    "lib": "lib"
+  },
+  "repository": "git+https://github.com/reergymerej/list-tweaker.git",
+  "keywords": [
+    "array",
+    "modification",
+    "helper",
+    "update"
+  ],
+  "author": "Jeremy Greer <jeremy.greer.atl@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/reergymerej/list-tweaker/issues"
+  },
+  "homepage": "https://github.com/reergymerej/list-tweaker#readme",
+  "private": false
 }
