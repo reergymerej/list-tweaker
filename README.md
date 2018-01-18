@@ -1,7 +1,7 @@
 # list-tweaker
 
 
-Easily modify items in an array by id.
+Easily modify items in an array.
 
 
 ## remove
