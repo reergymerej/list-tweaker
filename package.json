@@ -1,6 +1,7 @@
 {
   "version": "1.0.0",
   "name": "list-tweaker",
+  "description": "Easily modify items in an array",
   "main": "lib/index.js",
   "scripts": {
     "start": "babel-node src/index.js",
