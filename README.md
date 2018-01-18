@@ -2,12 +2,20 @@
 
 [![Build Status](https://travis-ci.org/reergymerej/list-tweaker.svg?branch=master)](https://travis-ci.org/reergymerej/list-tweaker)
 
-
-
 Easily modify items in an array
 
 
-## remove
+
+## Installation
+
+`yarn add list-tweaker`
+
+
+
+## Usage
+
+
+### remove
 
 ```js
 import { remove } from 'list-tweaker'
@@ -26,7 +34,7 @@ remove(list, { id: 'b' })
 ```
 
 
-## replace
+### replace
 
 ```js
 import { replace } from 'list-tweaker'
@@ -47,7 +55,7 @@ replace(list, { id: 'b', suprise: 'clown!' })
 ```
 
 
-## update
+### update
 
 ```js
 import { update } from 'list-tweaker'
