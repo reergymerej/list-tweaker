@@ -34,10 +34,7 @@ const list = [
   { id: 'c' },
 ]
 
-replace(list, {
-  id: 'b',
-  suprise: 'clown!',
-})
+replace(list, { id: 'b', suprise: 'clown!' })
 
 // [
 //   { id: 'a' },
